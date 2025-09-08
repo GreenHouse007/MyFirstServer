@@ -1,10 +1,9 @@
-const awesomeFunction = (req, res, next) => {
-  res.write("Hello, World!\n");
-  next();
+const awesomeFunction = (req, res) => {
+  res.send("Hello, World!");
 };
 
 const tooeleTech = (req, res) => {
-  res.end("Tooele Tech is Awesome!");
+  res.send("Tooele Tech is Awesome!");
 };
 
 module.exports = { awesomeFunction, tooeleTech };
